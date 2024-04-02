@@ -72,7 +72,7 @@
     },
     {
       "route": "/tenant/standards/*",
-      "allowedRoles": ["admin"]
+      "allowedRoles": ["admin", "editor"]
     },
     {
       "route": "/",

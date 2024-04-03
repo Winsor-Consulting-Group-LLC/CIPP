@@ -92,6 +92,7 @@ const OffboardingWizard = React.lazy(() =>
 const ListAppliedStandards = React.lazy(() =>
   import('src/views/tenant/standards/ListAppliedStandards'),
 )
+const ApplyStandard = React.lazy(() => import('src/views/tenant/standards/ListStandards'))
 const IndividualDomain = React.lazy(() => import('src/views/tenant/standards/IndividualDomain'))
 const ListAlerts = React.lazy(() => import('src/views/security/incidents/ListAlerts'))
 const ApplicationsList = React.lazy(() =>
@@ -409,6 +410,11 @@ const routes = [
     name: 'List Applied Standards',
     component: ListAppliedStandards,
   },
+  {
+     path: '/tenant/standards/list-standards',
+     name: 'List Standard',
+     component: ApplyStandard,
+    },
   {
     path: '/tenant/standards/bpa-report',
     name: 'Best Practice Report',

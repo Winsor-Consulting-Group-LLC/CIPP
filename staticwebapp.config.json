@@ -28,7 +28,7 @@
     },
     {
       "route": "/api/AddStandardsDeploy",
-      "allowedRoles": ["admin"]
+      "allowedRoles": ["admin", "editor", "readonly"]
     },
     {
       "route": "/LogoutRedirect",

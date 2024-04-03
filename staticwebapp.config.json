@@ -47,6 +47,10 @@
       "allowedRoles": ["admin", "editor"]
     },
     {
+      "route": "/api/listStandards",
+      "allowedRoles": ["admin", "editor", "readonly"]
+    },
+    {
       "route": "/api/edit*",
       "allowedRoles": ["admin", "editor"]
     },

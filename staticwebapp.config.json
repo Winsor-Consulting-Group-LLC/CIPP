@@ -71,6 +71,10 @@
       "allowedRoles": ["admin"]
     },
     {
+      "route": "/tenant/standards/list-standards",
+      "allowedRoles": ["admin", "editor", "readonly"]
+    },
+    {
       "route": "/tenant/standards/*",
       "allowedRoles": ["admin", "editor"]
     },

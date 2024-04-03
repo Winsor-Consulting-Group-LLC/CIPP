@@ -2,7 +2,7 @@ import React from 'react'
 
 const CIPPSettings = React.lazy(() => import('src/views/cipp/app-settings/CIPPSettings'))
 const Setup = React.lazy(() => import('src/views/cipp/Setup'))
-const ApplyStandard = React.lazy(() => import('src/views/tenant/standards/ListStandards'))
+//const ApplyStandard = React.lazy(() => import('src/views/tenant/standards/ListStandards'))
 const GDAPStatus = React.lazy(() => import('src/views/tenant/administration/ListGDAPQueue'))
 const GDAP = React.lazy(() => import('src/views/tenant/administration/GDAPWizard'))
 const GDAPInvite = React.lazy(() => import('src/views/tenant/administration/GDAPInviteWizard'))
@@ -56,11 +56,11 @@ const adminRoutes = [
     name: 'GDAP Status',
     component: GDAPStatus,
   },
-  {
-    path: '/tenant/standards/list-standards',
-    name: 'List Standard',
-    component: ApplyStandard,
-  },
+  //{
+  //  path: '/tenant/standards/list-standards',
+  //  name: 'List Standard',
+  //  component: ApplyStandard,
+  //},
   {
     path: '/tenant/administration/tenant-offboarding-wizard',
     name: 'Tenant Offboarding',

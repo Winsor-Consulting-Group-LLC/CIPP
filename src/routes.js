@@ -411,10 +411,10 @@ const routes = [
     component: ListAppliedStandards,
   },
   {
-     path: '/tenant/standards/list-standards',
-     name: 'List Standard',
-     component: ApplyStandard,
-    },
+    path: '/tenant/standards/list-standards',
+    name: 'List Standard',
+    component: ApplyStandard,
+  },
   {
     path: '/tenant/standards/bpa-report',
     name: 'Best Practice Report',

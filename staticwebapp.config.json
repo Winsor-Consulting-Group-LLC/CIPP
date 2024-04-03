@@ -47,7 +47,7 @@
       "allowedRoles": ["admin", "editor"]
     },
     {
-      "route": "/api/list*",
+      "route": "/api/listStandards",
       "allowedRoles": ["admin", "editor", "readonly"]
     },
     {
@@ -76,7 +76,7 @@
     },
     {
       "route": "/tenant/standards/*",
-      "allowedRoles": ["admin", "editor", "readonly"]
+      "allowedRoles": ["admin", "editor"]
     },
     {
       "route": "/",

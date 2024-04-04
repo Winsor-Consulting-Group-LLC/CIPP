@@ -11,6 +11,7 @@ import { cellTableFormatter } from 'src/components/tables/CellTable'
 
 const ListAppliedStandards = () => {
   const [ExecuteGetRequest, getResults] = useLazyGenericGetRequestQuery()
+  const currentTenant = useSelector((state) => state.app.currentTenant)
 
   const Offcanvas = (row, rowIndex, formatExtraData) => {
     const [ocVisible, setOCVisible] = useState(false)
@@ -99,11 +100,12 @@ const ListAppliedStandards = () => {
                 helpContext: 'https://google.com',
               }}
               title="Current Tenant Standards"
-              tenantSelector={false}
+              tenantSelector={true}
               datatable={{
                 columns: tableColumns,
                 reportName: `Standards`,
                 path: `api/listStandards`,
+                params: { tenantFilter: currentTenant.defaultDomainName }
               }}
             />
           </CCol>

@@ -105,7 +105,7 @@ const ListAppliedStandards = () => {
                 columns: tableColumns,
                 reportName: `Standards`,
                 path: `api/listStandards`,
-                params: { tenantFilter: currentTenant.defaultDomainName }
+                params: { tenantFilter: currentTenant.defaultDomainName },
               }}
             />
           </CCol>

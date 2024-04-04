@@ -71,8 +71,16 @@
       "allowedRoles": ["admin"]
     },
     {
+      "route": "/tenant/standards/domains-analyser",
+      "allowedRoles": ["admin", "editor", "readonly"]
+    },
+    {
+      "route": "/tenant/standards/bpa-report",
+      "allowedRoles": ["admin", "editor", "readonly"]
+    },
+    {
       "route": "/tenant/standards/*",
-      "allowedRoles": ["admin"]
+      "allowedRoles": ["admin", "editor"]
     },
     {
       "route": "/",
